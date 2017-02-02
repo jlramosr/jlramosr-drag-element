@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>jlramosr-drag-object demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../jlramosr-drag-object.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .jdo {
+        --jlramosr-drag-object-width: 30px;
+        --jlramosr-drag-object-height: 30px;
+        border: 1px solid #000;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic jlramosr-drag-object demo</h3>
+      <demo-snippet>
+        <template>
+
+          DEFAULT OBJECT:
+          <jlramosr-drag-object
+            class="jdo">
+          </jlramosr-drag-object>
+
+          OBJECT WITH ANIMATION AND INITIAL POSITION:
+          <jlramosr-drag-object
+            has-animation
+            corner-object-x="20"
+            corner-object-y="30"
+            class="jdo">
+          </jlramosr-drag-object>
+          
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
